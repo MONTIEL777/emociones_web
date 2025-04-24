@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: mindvibe-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: MYSQL_HOST
+        value: 127.0.0.1
+      - key: MYSQL_USER
+        value: alexis
+      - key: MYSQL_PASSWORD
+        value: Montiel_alexis77
+      - key: MYSQL_DB
+        value: mindvibe
+      - key: SECRET_KEY
+        value: clave_super_secreta
+      - key: MAIL_USERNAME
+        value: mindvibe.app@gmail.com
+      - key: MAIL_PASSWORD
+        value: imqx jsew cxtu qecn
